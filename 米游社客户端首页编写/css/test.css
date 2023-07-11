@@ -1,0 +1,15 @@
+div {
+  background-color: pink;
+}
+div::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+span {
+  float: left;
+  height: 50px;
+  width: 100px;
+  background-color: orange;
+  margin-right: 20px;
+}

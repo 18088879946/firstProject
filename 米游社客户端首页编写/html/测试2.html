@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Swiper demo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+
+    <!-- Link Swiper's CSS -->
+    <!-- <link rel="stylesheet" href="../css/swiper.min.css">不能引用 -->
+    <link rel="stylesheet" href="../css/swiper-bundle.min.css">
+
+    <!-- Demo styles -->
+    <style>
+        .div {
+            width: 400px;
+            height: 234px;
+            margin: 100px auto;
+            overflow: hidden;
+        }
+
+        .swiper-container {
+            width: 100%;
+            height: 100%;
+        }
+
+        .swiper-wrapper {
+            /* 通过改变animation-timing-function 制作弹性切换效果 */
+            transition: 2s cubic-bezier(0.68, -0.4, 0.27, 1.34) 0.2s;
+        }
+
+        .swiper-slide {
+            text-align: center;
+            font-size: 18px;
+            background: pink;
+
+            /* Center slide text vertically */
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: -webkit-flex;
+            display: flex;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            -webkit-justify-content: center;
+            justify-content: center;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            -webkit-align-items: center;
+            align-items: center;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Swiper -->
+    <div class="div">
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">side1</div>
+                <div class="swiper-slide">side1</div>
+                <div class="swiper-slide">side1</div>
+                <div class="swiper-slide">side1</div>
+                <div class="swiper-slide">side1</div>
+                <div class="swiper-slide">side1</div>
+                <div class="swiper-slide">side1</div>
+                <div class="swiper-slide">side1</div>
+                <div class="swiper-slide">side1</div>
+                <div class="swiper-slide">side1</div>
+            </div>
+            <!-- Add Arrows -->
+            <div class="swiper-button-next">woshi</div>
+            <div class="swiper-button-prev"></div>
+        </div>
+    </div>
+
+    <!-- Swiper JS -->
+    <script src="../js/swiper.min.js"></script>
+    <script src="../js/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+            speed: 2000,
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        });
+    </script>
+</body>
+
+</html>

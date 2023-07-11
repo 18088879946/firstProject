@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    /*  @font-face {
+        font-family: 'icomoon';
+        src: url('../fonts/icomoon.eot?fozrfh');
+        src: url('../fonts/icomoon.eot?fozrfh#iefix') format('embedded-opentype'),
+            url('../css/') format('truetype'),
+            url('../css/fonts/icomoon.woff?fozrfh') format('woff'),
+            url('../css/fonts/icomoon.svg?fozrfh#icomoon') format('svg');
+        font-weight: normal;
+        font-style: normal;
+        font-display: block;
+    }
+
+    div {
+        width: 100px;
+        height: 100px;
+        background-color: pink;
+    }
+
+    div::before {
+        font-family: 'icomoon';
+        content: "\ea50";
+    } */
+</style>
+
+<body>
+    <!-- <div></div> -->
+    <a href="#">链接</a>
+    <script>
+        window.addEventListener('load', function () {
+            var a = document.querySelector('a');
+            a.addEventListener('click', function () {
+                location.href = "./index.html"
+            })
+        })
+    </script>
+</body>
+
+</html>
